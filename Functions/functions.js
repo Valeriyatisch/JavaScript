@@ -136,16 +136,14 @@ function getLogin(usersArr, from, to = Infinity) {
      [-90, 12, -12]
  ];
  
-/*
  let check = (elem, index, array) => elem > 0;
 
  let biggerZero = (elem, index, array) => {
-     elem.filter(check);
+     return elem.filter(check);
 };
 
- let arr1 = arr.filter(biggerZero);
+ let arr1 = arr.map(biggerZero);
  console.log(arr1);
- */
  
 let plusTwo = (elem, index, array) => {
     array[index].forEach((elem, index, array) => { array[index] += 2;});
